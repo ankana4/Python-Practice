@@ -1,3 +1,13 @@
+'''
+List - It is a build-in data structure and sequence type object in python.
+- The items in list are in ordered way.
+- List can be mutable(we can add, update or remove items).
+- List can store any type of data(string, integers, list etc.) in single variable.
+- It can contain duplicate data also.
+
+'''
+'Examples of List are :- '
+
 fruit = ["apple", "banana", "guava"]
 # print(fruit)
 
@@ -24,9 +34,11 @@ fruit.append("kiwi")
 # print(fruit)
 
 # Extend items 
-extend_items = ["apple", "litchi", "mango"]
+extend_items = ["litchi", "mango"]
 fruit.extend(extend_items)
-# print(fruit)
+extend_more_items = "chilli"
+fruit.extend(extend_more_items)
+print(fruit)
 
 # add another list of items
 add_items = ["cucumber", "tomato"]
@@ -41,4 +53,8 @@ result = []
 result.append(fruit)
 result.append(["potato"])
 result.append(add_items)
-print(result)
+# print(result)
+
+# Remove items
+# fruit.remove("apple")
+# print(fruit)
