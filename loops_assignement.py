@@ -1,12 +1,12 @@
-# '''
-#     *      (1, 2)
-#   *   *    (1, 3)
-# *   *   *  (1, 4)
-# '''
-# for i in range(2, 5):
-#     for j in range(1, i):
-#         print(" " +"*", end="")
-#     print()    
+'''
+    *      (1, 2)
+  *   *    (1, 3)
+*   *   *  (1, 4)
+'''
+for i in range(2, 5):
+    for j in range(1, i):
+        print(" " +"*", end="")
+    print()    
     
     
 x = [1, 2, 3, 4, 5]    #x=1,2,3,4,5
@@ -96,6 +96,80 @@ count = 0
 for n in list:
     if n[1] > 80:
         count += 1
-print(count)         
+print(count) 
+
+
+'''
+*
+* *
+* * *
+* * * *
+''' 
+for i in range(1, 5):
+    for j in range(1, i+1):
+        print("*", end=" ")
+    print()          
      
-   
+'''
+1        (1, 2) 
+2 3      (2, 4)
+4 5 6    (4, 7)
+7 8 9 10 (7, 11)
+'''
+c = 2
+for i in range(1, 5):   #i=4
+    for j in range(1, i+1):  #j=1, 2, 3, 4
+        print(c, end=" ")  #c=20
+        c += 2   #c=22
+    print()
+
+
+'''
+1
+2 4
+3 6 9
+4 8 12 16
+'''
+for i in range(1, 5):   #i=4
+    for j in range(1, i+1): #j=1,5
+        print(i*j, end=" ") #1, 2 4, 3 6 9,  4 8 12 16
+    print()
+
+
+'''
+1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 1 0
+0 0 0 0 1
+'''
+
+for i in range(1, 6): #i=4
+    for j in range(1, 6): #j=4
+        if (i == j):  #(1,1)
+            print(1, end="")
+        else:
+            print(0, end="")
+    print()  
+    
+    
+'''
+1                1
+2 1              2
+1 2 3            3
+4 3 2 1          4
+1 2 3 4 5        5
+6 5 4 3 2 1      6
+'''   
+c = 1
+k=1
+for i in range(1, 7): 
+    if (i % 2 == 1):
+        for j in range(1, i+1): 
+            print(j, end=" ")
+        print()    
+    else:
+        for j in range(i, 0, -1): #j=6 5 4 3 2 1 
+            print(j, end =" ")
+        print()    
+            
