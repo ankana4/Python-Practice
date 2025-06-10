@@ -59,3 +59,10 @@ print(fruit)
 fruit.pop(3)
 fruit.reverse()
 print(fruit)
+
+
+#remove data from list
+list = [0,2,3,4,5,6,7]
+for i in list: #i=3  list=[2,4,6]
+    list.remove(i) 
+print(list)

@@ -25,8 +25,14 @@ for i in range(3): #i=4
 	data.append(copy.deepcopy(temp)) #[[0],[0,2],[0,2,4]]
 print(data)
 
-#remove data from list
-list = [0,2,3,4,5,6,7]
-for i in list: #i=3  list=[2,4,6]
-    list.remove(i) 
-print(list)
+
+#extend
+a = [1, 2, ('2', '1')]
+b = a
+
+a.extend(b)   # [1, 2, '2', '1']
+
+b.clear()
+
+print(a) 
+print(b) 
