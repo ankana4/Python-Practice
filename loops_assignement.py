@@ -173,3 +173,15 @@ for i in range(1, 7):
             print(j, end =" ")
         print()    
             
+            
+
+'''
+1
+2 1
+3 2 1
+4 3 2 1
+'''    
+for i in range(0, 4):
+    for j in range(i+1, 0, -1):
+        print(j, end=" ")
+    print()            
