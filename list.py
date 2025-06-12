@@ -66,3 +66,35 @@ list = [0,2,3,4,5,6,7]
 for i in list: #i=3  list=[2,4,6]
     list.remove(i) 
 print(list)
+
+
+#List unpacking examples
+list1 = ['a']
+list2 = ['b', 'c']
+list3 = ['d', 'e']
+
+new_list = [*list1, *list2, *list3]
+print(new_list)
+
+#Add elements in between
+a = [1, 2]
+b = [4, 5]
+new_list = [*a, 3, *b, 6]
+print(new_list)
+
+#Clone(copy) a list
+original = ['x', 'y', 'z']
+copy = [*original]
+print(copy)
+
+#Unpack inside a function argument
+def show_names(a, b, c):
+    print(a, b, c)
+    
+names = ['Arun', 'Barun', 'Nitai']
+show_names(*names) 
+
+#Nested unpacking
+nested = [[1, 2], [3, 4]]
+flat = [*nested[0], *nested[1]]
+print(flat)
