@@ -71,10 +71,18 @@ for i in range(len(list), 0, -1):
     new_list.append(list[i-1])
 print(f"new list {new_list}")
     
-#Without using new list(In Place)
-# list = [10, 20, 30, 40, 50]
-# for i in range(1, len(list)):
-#     if list[i-1] > list[]: 
+# Without using new list(In Place)
+list = [10, 20, 30, 40, 50]
+first_idx = 0
+last_idx = len(list)-1
+for i in list:
+    if first_idx < last_idx:
+        temp = list[first_idx]
+        list[first_idx] = list[last_idx]
+        list[last_idx] = temp
+        first_idx += 1
+        last_idx -= 1
+print(list)
 
 #Given a list of numbers, find and print the maximum number (without using max()).
 list = [10, 20, 30, 51, 50]
@@ -131,8 +139,21 @@ print(dict)
     
 #Create a dictionary where keys are student names and values are their marks. Then calculate the average mark.
 data = {'Amrit': 30, 'Sruti': 55, 'Sristi': 87, 'Paran': 76}
-avg = 0
+no_of_students = len(data)
+sum = 0
 for key, value in data.items():
-    grade = value
-    avg = avg + grade
-print(avg)    
+    marks = value
+    sum = sum + value
+    total_marks = sum / no_of_students
+print(total_marks)      
+
+
+#Given a dictionary of item: price, find the item with the highest price.
+item_prices = {
+    "apple": 30,
+    "banana": 10,
+    "milk": 45,
+    "bread": 40,
+    "eggs": 60
+}
+
