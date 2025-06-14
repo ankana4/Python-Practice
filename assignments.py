@@ -174,3 +174,16 @@ if str_data == temp:
     print('Palindrome')
 else:
     print('Not palindrome')  
+
+
+#Write a function that checks if two words are anagrams (contain the same letters in different order)
+str_data1 = 'aabb'
+str_data2 = 'bbaa'
+temp = ''
+if len(str_data1) != len(str_data2):
+    print("Not anagram")
+else:
+    for ch in str_data1:
+        if str_data1.count(ch) != str_data2.count(ch):
+            print('Not anagram')
+    print('Anagram')         
