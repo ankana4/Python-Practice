@@ -187,3 +187,80 @@ else:
         if str_data1.count(ch) != str_data2.count(ch):
             print('Not anagram')
     print('Anagram')         
+
+
+#Write your own version of the range() function that returns a list of numbers between two values.
+def get_list(a, b):
+    data = []
+    a += 1
+    while a < b:
+        data.append(a)
+        a += 1
+    return data
+
+a = 0
+b = 6
+
+list_data = get_list(a, b)
+print(list_data)
+
+
+#Create a calculator that takes two numbers and an operator (+, -, *, /) and returns the result.
+def calculator(a, b, op):
+    data = None
+    if op == '+':
+        data = a + b
+    elif op == '-':
+        data = a - b
+    elif op == '*':
+        data = a * b
+    elif op == '/':
+        try:
+            data = a / b  
+        except ZeroDivisionError as e:
+            print(str(e))   
+    else:
+        print(f'You take wrong operator, Please select correct one{'+', '_', '*', '/'}')                   
+    return data
+
+try:
+    a = int(input("Enter a : "))
+    b = int(input("Enter b : "))
+    op = input("Enter operator : ")
+    result = calculator(a, b, op)
+    print(result)
+
+except ValueError as e:
+    print(f'Incorrect input provided, {str(e)}')    
+
+
+#Given two lists, print a list of elements common to both.    
+a = [1, 2, 3, 4, 5, 2]
+b = [2, 4, 6, 7, 8]
+list = []
+for data in a:
+    if data in b and data not in list:
+        list.append(data)
+print(list)         
+
+
+#4. Create a dictionary like this:
+'''
+student = {
+"name": "Alice",
+"grades": {"math": 90, "science": 80}
+}
+'''
+
+# Then write code to print only the math grade.
+
+student = {}
+student['name'] = 'Alice'
+student['grades'] = {"math": 90, "science": 80}
+print(student['grades']['math'])
+no_of_sub = len(student['grades'])
+total_sum = 0
+for key, value in student['grades'].items():
+    total_sum = total_sum + value #170
+total_avg = total_sum/no_of_sub #170/2
+print(total_avg)   
