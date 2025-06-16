@@ -104,3 +104,4 @@ color_dict = {
 for key in sorted(color_dict):
     print(color_dict[key])
     
+#Get Maximum and Minimum Values of a Dictionary
