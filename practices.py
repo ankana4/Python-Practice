@@ -20,3 +20,23 @@ class Solution:
 obj = Solution()
 data = obj.sumOfSquares(3)
 print(data)        
+
+
+#reverse of a number and palindrome
+def reverse(n):
+    rev = 0
+    temp = n
+    while n > 0:
+        last_digit = n % 10
+        rev = rev * 10 + last_digit
+        n = n // 10
+    if rev == temp:
+        return True
+    else:
+        return False
+
+reve = reverse(n = 5855)
+print(reve)
+           
+
+           
