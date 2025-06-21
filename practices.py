@@ -37,6 +37,23 @@ def reverse(n):
 
 reve = reverse(n = 5855)
 print(reve)
-           
+
+
+
+#Armstrong
+def isAramstrong(n):
+    rev = 0
+    temp = n
+    while (n > 0):
+        last_digit = n % 10
+        rev = rev + last_digit*last_digit*last_digit
+        n = n //10
+    if rev == temp:
+        return True
+    else:
+        return False
+
+data = isAramstrong(100)
+print(data)                   
 
            
