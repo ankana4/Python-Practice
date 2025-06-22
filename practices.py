@@ -4,7 +4,7 @@ class Solution:
         result = 1
         for i in range(1, n+1):
             result = result * i
-        return result
+        # return result
     
 obj = Solution()    
 data = obj.factorial(n = 4)
@@ -127,4 +127,24 @@ def isPrime(n):
     return True
 print(isPrime(1))        
 
-#Optimize approach3
+# Optimize approach3
+
+'''
+You are given a string s containing only lowercase letters. You need to count the number of vowels and the number of consonants.
+'''
+s = input("Enter a string value: ")
+vc=0
+cc=0
+for i in s:
+    if i == " ":
+        continue
+    if i not in ['a', 'e', 'i', 'o', 'u']:
+        cc += 1
+    else:
+        vc += 1
+if vc > cc:
+    print("Yes", vc, cc)
+elif vc < cc:
+    print("No")
+else:
+    print("Same")                    
