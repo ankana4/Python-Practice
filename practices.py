@@ -85,14 +85,14 @@ def gcd(a, b) -> int:
 print(gcd(12, 8))      
 
 #gfg optimize approach
-# def gcd(a, b):
-#     while(b != 0):
-#         temp = b
-#         b = a%b
-#         a = temp
-#     return a    
+def gcd(a, b):
+    while(b != 0):
+        temp = b
+        b = a%b
+        a = temp
+    return a    
 
-# print(gcd(3, 6))      
+print(gcd(3, 6))      
                  
 #Prime numbers
 # def isPrime(n):
