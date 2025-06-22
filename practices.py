@@ -108,14 +108,14 @@ def isPrime(n):
 print(isPrime(3))                   
 
 #optimize approach1
-# def isPrime(n):
-#     no_of_factors=0
-#     for i in range(1, n+1):
-#         if n % i == 0:
-#             no_of_factors += 1
-#     return no_of_factors == 2
+def isPrime(n):
+    no_of_factors=0
+    for i in range(1, n+1):
+        if n % i == 0:
+            no_of_factors += 1
+    return no_of_factors == 2
      
-# print(isPrime(7))   
+print(isPrime(7))   
 
 #optimize approach2 
 # def isPrime(n):
