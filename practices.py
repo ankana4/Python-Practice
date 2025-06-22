@@ -95,17 +95,17 @@ def gcd(a, b):
 print(gcd(3, 6))      
                  
 #Prime numbers
-# def isPrime(n):
-#     factors = []
-#     for i in range(1, n+1):
-#         if n % i == 0:
-#             factors.append(i)
-#     if len(factors) == 2:
-#         return True
-#     else:
-#         return False
+def isPrime(n):
+    factors = []
+    for i in range(1, n+1):
+        if n % i == 0:
+            factors.append(i)
+    if len(factors) == 2:
+        return True
+    else:
+        return False
      
-# print(isPrime(3))                   
+print(isPrime(3))                   
 
 #optimize approach1
 # def isPrime(n):
