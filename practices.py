@@ -77,12 +77,12 @@ for i in factor_of_a:
 print(result)                  
       
 #Optimize approach
-# def gcd(a, b) -> int:
-#     for i in range(min(a,b), 0, -1):
-#         if a % i == 0 and b % i == 0:
-#             return i 
-#     return 1    
-# print(gcd(12, 8))      
+def gcd(a, b) -> int:
+    for i in range(min(a,b), 0, -1):
+        if a % i == 0 and b % i == 0:
+            return i 
+    return 1    
+print(gcd(12, 8))      
 
 #gfg optimize approach
 # def gcd(a, b):
