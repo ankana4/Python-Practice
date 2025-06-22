@@ -56,4 +56,75 @@ def isAramstrong(n):
 data = isAramstrong(100)
 print(data)                   
 
-           
+
+#GCD of two number or HCF of two number
+def factor(n):
+    factors = []
+    for i in range(1, n+1):
+        if n % i == 0:
+            factors.append(i)
+    return factors
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+factor_of_a = factor(a)
+factor_of_b = factor(b)
+
+result = 0
+for i in factor_of_a:
+    if i in factor_of_b:
+        if i > result:
+            result = i  
+print(result)                  
+      
+#Optimize approach
+# def gcd(a, b) -> int:
+#     for i in range(min(a,b), 0, -1):
+#         if a % i == 0 and b % i == 0:
+#             return i 
+#     return 1    
+# print(gcd(12, 8))      
+
+#gfg optimize approach
+# def gcd(a, b):
+#     while(b != 0):
+#         temp = b
+#         b = a%b
+#         a = temp
+#     return a    
+
+# print(gcd(3, 6))      
+                 
+#Prime numbers
+# def isPrime(n):
+#     factors = []
+#     for i in range(1, n+1):
+#         if n % i == 0:
+#             factors.append(i)
+#     if len(factors) == 2:
+#         return True
+#     else:
+#         return False
+     
+# print(isPrime(3))                   
+
+#optimize approach1
+# def isPrime(n):
+#     no_of_factors=0
+#     for i in range(1, n+1):
+#         if n % i == 0:
+#             no_of_factors += 1
+#     return no_of_factors == 2
+     
+# print(isPrime(7))   
+
+#optimize approach2 
+# def isPrime(n):
+#     if n == 1:
+#         return False
+#     for i in range(2, n):
+#         if n%i == 0 :
+#             return False
+#     return True
+# print(isPrime(1))        
+
+#Optimize approach3
