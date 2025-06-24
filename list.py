@@ -4,6 +4,7 @@ List - It is a build-in data structure and sequence type object in python.
 - List can be mutable(we can add, update or remove items).
 - List can store any type of data(string, integers, list etc.) in single variable.
 - It can contain duplicate data also.
+- Python lists are 0-based.
 
 '''
 'Examples of List are :- '
