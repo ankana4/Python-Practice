@@ -193,3 +193,68 @@ student = {
 student['name'] = 'Alice'
 student['grades'] = {"math": 90, "science": 80}
 print(student['grades']['math'])
+
+import copy
+company = {'IT': {'employees': ['Alice', 'Bob']}}
+backup = copy.deepcopy(company)
+backup['IT']['employees'].append('Eve')
+print(company['IT']['employees'])
+
+
+d = {'list': [[]] * 3} # {'list' : [[], [], []]}
+
+d['list'][0].append(42)
+print(d['list'])
+# [[42],[42],[42]]
+
+# ls = [[12]]*4
+# ls = [[12],[12],[12],[12]]
+
+d = {'a': {'b': 1}}
+e = d['a'] #e={'b' : 1}
+e = {'b': 2}
+print(d['a']['b'])
+
+class A(object):
+    def foo(self, x):
+        print(f"executing foo({self}, {x})")
+
+    @classmethod
+    def class_foo(cls, x):
+        print(f"executing class_foo({cls}, {x})")
+
+    @staticmethod
+    def static_foo(x):
+        print(f"executing static_foo({x})")
+
+a = A()
+# print(a)
+
+s = [1, 3, 5, -1, -5, 9]
+result = None
+for i in s:
+    if i < 0:
+        if result is None or i > result:
+            result = i
+print(result)
+    
+t = max([i for i in s if i < 0])
+print(t)
+
+arr = [-11, -22, -4, -5, -67, -34]
+max_value = arr[0]
+for i in range(1, len(arr)):
+    if arr[i] > max_value:
+        max_value = arr[i] 
+print(max_value)        
+
+
+s = [3, 2, 5]
+output = []
+for i in range(0, len(s)):
+    product=1
+    for j in range(0, len(s)):
+        if i != j:
+            product *= s[j]
+    output.append(product)
+print(output)            
