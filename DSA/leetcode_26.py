@@ -14,3 +14,15 @@ for j in range(0, add_digit):
 list1 = (temp_list)
 print(c)
 print(list1)  
+
+
+#optimal approach
+
+nums = [1, 2, 2]
+        
+i = 0
+for j in range(1, len(nums)):
+    if nums[j] != nums[i]:
+        nums[i+1] = nums[j]
+        i += 1
+print(i+1)        
