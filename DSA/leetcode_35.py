@@ -9,3 +9,17 @@ for i in range(0, len(nums)):
         data = i+1
 print(data)                      
          
+       
+       
+       
+nums = [1, 3, 4, 6]
+target = 2
+data = 0
+
+for i in range(0, len(nums)):
+    if nums[i] == target:
+        data = i
+    elif nums[i] < target:
+        data = i+1
+print(data)        
+                         
