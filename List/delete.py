@@ -83,20 +83,20 @@ print(deleted_numbers)
 #Predict both outputs.
 numbers = [10, 20, 30]
 value = numbers.pop()
-print(numbers) #[10, 20]
-print(value) #30
+# print(numbers) #[10, 20]
+# print(value) #30
 
 
 #Invalid pop index
 #What error occurs?
 numbers = [10, 20, 30]
-numbers.pop(10)  #pop index out of range
+# numbers.pop(10)  #pop index out of range
 
 #Pop from empty list
 #What error occurs?
 numbers = []
-numbers.pop()  #pop from empty list
-print(numbers)
+# numbers.pop()  #pop from empty list
+# print(numbers)
 
 #List as stack
 #Push 10, 20, and 30 with append(), then pop one value.
@@ -127,3 +127,44 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 # Expected: [1, 3, 5, 7]
 del numbers[1::1]
 print(numbers)        
+
+
+#Delete the variable
+#Predict what happens and explain deletion versus emptying.
+numbers = [1, 2, 3]
+del numbers
+# print(numbers) #numbers is not defined
+
+#clear() all elements
+#Empty the list using clear().
+numbers = [10, 20, 30]
+numbers.clear()
+print(numbers)
+
+#clear() versus del
+#Explain the difference between numbers.clear() and del numbers.
+''' 
+clear() - removes all elements
+del - deletes the variable
+del - delete one variable from element
+del - delete multiple elements from list
+del - removes all element 
+
+'''
+
+#Shared reference with clear()
+#Predict both outputs and explain them.
+a = [1, 2, 3]
+b = a
+a.clear()
+print(a) #[]
+print(b) #[]
+
+
+#Reassignment versus clear()
+#Predict both outputs and explain why this differs from clear().
+a = [1, 2, 3]  
+b = a
+a = []
+print(a) #[]
+print(b) #[1, 2, 3]
