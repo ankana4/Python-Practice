@@ -41,3 +41,12 @@ print(new_list)
 #Predict the output and explain why no error occurs.
 numbers = [1, 2, 3]
 print(numbers[0:100]) #No error occurs because Python slicing safely adjusts an out-of-range stop index to the list’s actual length.
+
+#Indexing versus slicing
+#Compare numbers[100] with numbers[100:200]. Which raises an error, and why?
+#The difference is that indexing accesses a single element, while slicing returns a portion of the list.
+'''
+numbers = [1, 2, 3]
+print(numbers[100]) #IndexError: list index out of range
+print(numbers[100:200]) #[]
+'''
