@@ -21,3 +21,8 @@ print(numbers) #[1, 10, 20, 30, 3]
 #Insert 100 and 200 at index 2 without insert().
 numbers[1:2] = [100, 200]
 print(numbers)
+
+#Delete through slicing assignment
+#Remove indexes 1 through 3 by assigning an empty list.
+numbers[1:4] = []
+print(numbers)
