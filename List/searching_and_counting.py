@@ -53,4 +53,13 @@ print(even_count, odd_count)
 
 
 
-     
+#Values above average
+#Calculate the average, then count how many values are greater than it. 
+numbers = [4, -2, 0, 7, -5, 0, 8]
+average = sum(numbers)/len(numbers)   
+print("Average is: ", average)
+count = 0
+for i in numbers:
+    if i > average:
+        count += 1
+print(count)
