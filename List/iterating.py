@@ -11,3 +11,10 @@ for i in numbers:
 numbers = [10, 20, 30, 40]
 for i in range(len(numbers)):
     print(i, numbers[i])
+    
+
+#Print output in the form "Index 0: 10".
+numbers = [10, 20, 30]    
+
+for i, n in enumerate(numbers):
+    print(f"Index {i} : {n}")
