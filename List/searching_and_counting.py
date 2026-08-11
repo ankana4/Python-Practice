@@ -20,3 +20,37 @@ numbers = [4, 7, 2, 7, 9, 7]
 for i in range(len(numbers)):
     if numbers[i] == 7:
         print(i)
+        
+
+#Count positive, negative, zero
+#Count each category separately.
+numbers = [4, -2, 0, 7, -5, 0, 8]    
+positive = 0
+negative = 0
+zero = 0
+
+for i in numbers:
+    if i > 0:
+        positive += 1
+    elif i < 0:
+        negative += 1
+    else:
+        zero += 1
+print(positive, negative, zero)        
+
+
+#Count even and odd
+#Count even and odd values separately.
+even_count = 0
+odd_count = 0
+
+for i in numbers:
+    if i%2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+print(even_count, odd_count)   
+
+
+
+     
