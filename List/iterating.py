@@ -18,3 +18,10 @@ numbers = [10, 20, 30]
 
 for i, n in enumerate(numbers):
     print(f"Index {i} : {n}")
+    
+
+#Print elements in reverse order without reverse() or slicing.    
+
+numbers = [10, 20, 30, 40]
+for i in range(len(numbers)-1, -1, -1):
+    print(numbers[i])
