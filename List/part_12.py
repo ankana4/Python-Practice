@@ -23,3 +23,18 @@ for i in numbers:
         smallest=i
 print(smallest)
 
+#Second-largest distinct value
+#Return 30.
+numbers = [10, 40, 20, 40, 30]
+largest = numbers[0]
+second_largest = None
+
+for i in numbers:
+    if i>largest:
+        second_largest=largest
+        largest=i
+    elif i<largest:
+        if second_largest is None or i>second_largest:
+            second_largest=i
+print(second_largest)    
+
