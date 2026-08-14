@@ -38,3 +38,12 @@ for i in numbers:
             second_largest=i
 print(second_largest)    
 
+#Remove duplicates preserving order
+#Return [1, 2, 3, 4] without set().
+numbers = [1, 2, 1, 3, 2, 4, 1]
+
+new_list = []
+for i in numbers:
+    if i not in new_list:
+        new_list.append(i)
+print(new_list)
