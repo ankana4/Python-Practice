@@ -47,3 +47,19 @@ for i in numbers:
     if i not in new_list:
         new_list.append(i)
 print(new_list)
+
+
+#Separate even and odd
+#Build two lists: even_numbers and odd_numbers.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+even_numbers = []
+odd_numbers = []
+
+for i in numbers:
+    if i%2==0:
+        even_numbers.append(i)
+    else:
+        odd_numbers.append(i)
+print(even_numbers)
+print(odd_numbers)
