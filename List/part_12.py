@@ -63,3 +63,15 @@ for i in numbers:
         odd_numbers.append(i)
 print(even_numbers)
 print(odd_numbers)
+
+#Build separate lists for positive and negative values.
+numbers = [1, -2, -4, 7, 8, -5]
+positive = []
+negative = []
+for i in numbers:
+    if i>0:
+        positive.append(i)
+    else:
+        negative.append(i)
+print(positive)
+print(negative)
