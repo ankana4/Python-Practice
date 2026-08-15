@@ -94,3 +94,14 @@ new_list = []
 for i in range(len(numbers)-1, -1, -1):
     new_list.append(numbers[i])
 print(new_list)    
+
+
+#Sorted-list check
+#Return True if ascending, otherwise False.
+numbers = [10, 20, 30, 40]
+flag = True
+for i in range(0, len(numbers)-1):
+    if numbers[i] > numbers[i+1]:
+        flag=False
+        break
+print(flag)
