@@ -86,3 +86,11 @@ for i in numbers:
     else:
         new_list.insert(0, i)
 print(new_list)
+
+
+#Reverse the list without reverse() or slicing.
+numbers = [1, 2, 3, 4, 5]
+new_list = []
+for i in range(len(numbers)-1, -1, -1):
+    new_list.append(numbers[i])
+print(new_list)    
