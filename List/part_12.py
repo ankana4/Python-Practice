@@ -75,3 +75,14 @@ for i in numbers:
         negative.append(i)
 print(positive)
 print(negative)
+
+#Move zeros to the end
+#Return [1, 3, 12, 0, 0]
+numbers = [0, 1, 0, 3, 12]
+new_list = []
+for i in numbers:
+    if i==0:
+        new_list.append(i)
+    else:
+        new_list.insert(0, i)
+print(new_list)
