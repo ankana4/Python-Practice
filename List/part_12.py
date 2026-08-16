@@ -48,6 +48,17 @@ for i in numbers:
         new_list.append(i)
 print(new_list)
 
+#Another approach
+new_list = []
+for i in range(0, len(numbers)):
+    is_duplicate = False
+    for j in range(0, i):
+        if numbers[i] == numbers[j]:
+            is_duplicate = True
+            break
+    if is_duplicate == False:
+        new_list.append(numbers[i])
+print("After removing duplicated ",new_list)            
 
 #Separate even and odd
 #Build two lists: even_numbers and odd_numbers.
