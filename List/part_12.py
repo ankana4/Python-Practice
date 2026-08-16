@@ -87,6 +87,15 @@ for i in numbers:
         new_list.insert(0, i)
 print(new_list)
 
+#Another approach
+updated_list = []
+for i in numbers:
+    if i != 0:
+        updated_list.append(i)
+for i in numbers:
+    if i == 0:   
+        updated_list.append(i)
+print(f"Updated_list is ",updated_list)            
 
 #Reverse the list without reverse() or slicing.
 numbers = [1, 2, 3, 4, 5]
