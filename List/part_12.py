@@ -95,7 +95,19 @@ for i in numbers:
 for i in numbers:
     if i == 0:   
         updated_list.append(i)
-print(f"Updated_list is ",updated_list)            
+print(f"Updated_list is ",updated_list) 
+
+#Another approach
+zeros = []
+non_zeros = []
+            
+for i in numbers:
+    if i == 0:
+        zeros.append(i)
+    else:
+        non_zeros.append(i)
+new_list = zeros + non_zeros
+print("New list is ",new_list)            
 
 #Reverse the list without reverse() or slicing.
 numbers = [1, 2, 3, 4, 5]
