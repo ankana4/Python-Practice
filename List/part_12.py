@@ -160,3 +160,18 @@ if numbers  == numbers[::-1]:
     print("Palindrome")
 else:
     print("Not palindrome")
+    
+    
+#Common elements without sets
+#Return [3, 4].
+a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]    
+
+new_list = []
+
+for i in a:
+    for j in b:
+        if i == j:
+            new_list.append(i)
+            break
+print(new_list)                 
