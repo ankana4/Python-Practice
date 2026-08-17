@@ -208,3 +208,10 @@ for i in b:
         updated_list.append(i)
 print(updated_list)                
         
+#Another approach
+combind_list = a+b
+new_list = []
+for i in combined_list:
+    if combined_list.count(i) == 1:
+        new_list.append(i)
+print(new_list)        
