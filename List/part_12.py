@@ -175,3 +175,11 @@ for i in a:
             new_list.append(i)
             break
 print(new_list)                 
+
+
+#Another approach
+updated_list = []
+for i in a:
+    if i in b:
+        updated_list.append(i)
+print(updated_list)        
