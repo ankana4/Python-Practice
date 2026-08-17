@@ -155,9 +155,8 @@ else:
 
 #Another approach
 numbers = [1, 2, 3, 2, 1]
- 
+
 if numbers  == numbers[::-1]:
-     print("Palindrome")
+    print("Palindrome")
 else:
     print("Not palindrome")
-             
