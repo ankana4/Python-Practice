@@ -196,3 +196,15 @@ for i in combined_list:
     if i not in new_list:
         new_list.append(i)
 print(new_list)        
+
+#Correct approach1
+updated_list = []
+for i in a:
+    if i not in b:
+        updated_list.append(i)
+
+for i in b:
+    if i not in a:
+        updated_list.append(i)
+print(updated_list)                
+        
