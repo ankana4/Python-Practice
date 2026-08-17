@@ -183,3 +183,16 @@ for i in a:
     if i in b:
         updated_list.append(i)
 print(updated_list)        
+
+
+#Elements present in only one list
+#Return [1, 2, 5, 6].
+a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]
+
+new_list = []
+combined_list = a+b
+for i in combined_list:
+    if i not in new_list:
+        new_list.append(i)
+print(new_list)        
