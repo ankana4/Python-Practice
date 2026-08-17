@@ -7,9 +7,9 @@
 '''
 n = 6
 num = 1
-for i in range(0, n):
+for i in range(1, n+1):
     for j in range(0, i):
         print(num, end=" ")
         num += 1
     print()    
-print()        
+     
