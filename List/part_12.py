@@ -137,3 +137,17 @@ for i in range(0, len(numbers)-1):
         flag=False
         break
 print(flag)
+
+
+#Palindrome list
+#Return True for the given list.
+numbers = [1, 2, 3, 2, 1]
+new_list = []
+rev = []
+for i in numbers:
+    new_list.append(i)
+rev = numbers[::-1]
+if new_list == rev:
+    print("palindrome")
+else:
+    print("Not palindrome")    
