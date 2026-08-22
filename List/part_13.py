@@ -14,3 +14,7 @@ print(a + b) #[1, 2, 3, 4]
 matrix = [[0] * 3] * 3
 matrix[0][0] = 1
 print(matrix) #[[1, 0, 0], [1, 0, 0], [1, 0, 0]]
+
+#Correct nested-list creation
+#Rewrite Question 103 so only the first row changes.
+# Expected: [[1, 0, 0], [0, 0, 0], [0, 0, 0]]
