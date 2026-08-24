@@ -18,3 +18,10 @@ print(matrix) #[[1, 0, 0], [1, 0, 0], [1, 0, 0]]
 #Correct nested-list creation
 #Rewrite Question 103 so only the first row changes.
 # Expected: [[1, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+#Mutation during iteration
+#Does the loop terminate? Explain.
+numbers = [1, 2, 3]
+for number in numbers:
+    numbers.append(number)
+print(numbers)  #the loop keeps growing the list and effectively runs forever.
