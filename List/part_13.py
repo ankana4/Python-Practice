@@ -25,3 +25,11 @@ numbers = [1, 2, 3]
 for number in numbers:
     numbers.append(number)
 print(numbers)  #the loop keeps growing the list and effectively runs forever.
+
+
+#Modify by index
+#Predict the output.
+numbers = [1, 2, 3, 4]
+for i in range(len(numbers)):
+    numbers[i] = numbers[i] * 2
+print(numbers) #[2, 4, 6, 8]
