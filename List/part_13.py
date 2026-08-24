@@ -33,3 +33,10 @@ numbers = [1, 2, 3, 4]
 for i in range(len(numbers)):
     numbers[i] = numbers[i] * 2
 print(numbers) #[2, 4, 6, 8]
+
+#Reassign loop variable
+#Predict the output and explain why the list does not change.
+numbers = [1, 2, 3]
+for number in numbers:
+    number = number * 10
+print(numbers)  #[1, 2, 3]
