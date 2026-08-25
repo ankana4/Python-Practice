@@ -48,3 +48,13 @@ def add_value(items):
 numbers = [1, 2, 3]
 add_value(numbers)
 print(numbers)
+
+
+#Mutable default argument trap
+#Predict all three outputs and explain why the list is reused.
+def add_item(item, items=[]):
+    items.append(item)
+    return items
+print(add_item(1))
+print(add_item(2))
+print(add_item(3))
