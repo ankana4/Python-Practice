@@ -40,3 +40,11 @@ numbers = [1, 2, 3]
 for number in numbers:
     number = number * 10
 print(numbers)  #[1, 2, 3]
+
+#Mutable function argument
+#Predict the output.
+def add_value(items):
+    items.append(100)
+numbers = [1, 2, 3]
+add_value(numbers)
+print(numbers)
