@@ -38,4 +38,13 @@ for i in range(0, len(nums)):
 print(result)        
         
         
+#Another approach using hashmap
+mp={}
+for i, num in enumerate(nums):
+    complement = target - num
+    if complement in mp:
+        print([mp[complement], i])  
+    mp[num] = i
+print([-1, -1])       
         
+
