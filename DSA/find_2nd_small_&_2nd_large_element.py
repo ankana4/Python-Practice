@@ -1,7 +1,7 @@
 #Find Second Smallest and Second Largest Element in an array
 #Brute-force approach
 
-arr = [1, 2, 4, 6, 7, 5]  
+arr = [1, 2, 4, 7, 7, 5]  
 n = len(arr)
 if n == 0 or n == 1:
     print(-1, -1)
@@ -10,3 +10,18 @@ smallest = arr[1]
 largest = arr[n-2]
 print("Sorted array is: ", arr)
 print("Smallest and largest is: ", smallest, largest)    
+
+#Better approach
+#First find largest element
+largest = arr[0]
+for i in range(1, n):
+    if arr[i] > largest:
+        largest = arr[i]
+
+#Now find second largest
+second_largest = -1
+for i in range(0, n):
+    if arr[i] > second_largest and arr[i] != largest:
+        second_largest = arr[i]
+    continue
+print(second_largest)            
