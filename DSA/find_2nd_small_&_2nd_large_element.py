@@ -25,3 +25,17 @@ for i in range(0, n):
         second_largest = arr[i]
     continue
 print(second_largest)            
+
+#Find smallest
+smallest = arr[0]
+for i in range(1, n):
+    if arr[i] < smallest:
+        smallest = arr[i]
+
+#Second smallest
+second_smallest = float('inf')   
+for i in range(1, n):
+    if arr[i] < second_smallest and arr[i] != smallest:
+        second_smallest = arr[i]
+        continue
+print(second_smallest)        
