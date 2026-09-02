@@ -15,3 +15,9 @@ for i in range(0, n):
 print(nums)
 print(nums[0])            
             
+#Better appraoch
+largest = nums[0]
+for i in range(1, n):
+    if nums[i] > largest:
+        largest = nums[i]
+print(largest)                    
