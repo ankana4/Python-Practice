@@ -13,3 +13,12 @@ for i in range(0, n):
         break
 print(nums[k-1])            
     
+    
+#Optimal appraoch using minheap
+import heapq
+heap=[]
+for i in nums:
+    heapq.heappush(heap, i)
+    if len(heap)>k:
+        heapq.heappop(heap)
+print(heap[0])            
