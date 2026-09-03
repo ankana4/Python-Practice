@@ -10,6 +10,17 @@ for i in nums:
 add_digit = len(nums) - len(output)
 for j in range(0, add_digit):
     output.append(0)
+nums = output    
 print(output)            
 
 
+#Another brute force approach
+seen = set()
+index = 0
+for i in nums:
+    if i not in seen:
+        seen.add(i)
+        nums[index] = i
+        index += 1
+print(index)        
+print(nums)
