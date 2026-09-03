@@ -24,3 +24,12 @@ for i in nums:
         index += 1
 print(index)        
 print(nums)
+
+#Optimal approach
+i = 0
+for j in range(1, len(nums)):
+    if nums[j]!=nums[i]:
+        nums[i+1] = nums[j]
+        i += 1
+print(i+1)        
+print(nums)
