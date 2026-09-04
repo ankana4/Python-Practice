@@ -23,7 +23,6 @@ second_largest = -1
 for i in range(0, n):
     if arr[i] > second_largest and arr[i] != largest:
         second_largest = arr[i]
-    continue
 print(second_largest)            
 
 #Find smallest
@@ -37,7 +36,6 @@ second_smallest = float('inf')
 for i in range(1, n):
     if arr[i] < second_smallest and arr[i] != smallest:
         second_smallest = arr[i]
-        continue
 print(second_smallest)        
 
 
