@@ -14,7 +14,7 @@ arr = temp
 print(arr)            
 
 
-#Optimal approach
+#Optimal approach -> two-pointer approach
 j = -1
 n = len(arr)
 for i in range(0, n):
