@@ -8,3 +8,7 @@ for i in arr1:
 for i in arr2:
     seen.add(i)
 print(seen)        
+
+#Another approach using set()
+st = set(arr1) | set(arr2)
+print(sorted(st))
