@@ -23,3 +23,10 @@ for i in range(1, n):
         print(i)
         break
     
+#Using Sum of n terms Formula    
+n = len(arr)+1
+totalSum = sum(arr)
+expectedSum = n * (n+1) //2
+
+missingNum = expectedSum - totalSum
+print(missingNum)
