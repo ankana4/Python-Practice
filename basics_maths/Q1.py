@@ -9,7 +9,7 @@ while numbers>0:
 print(c)
 
 #Alternate approach
-def CountDigits(numberts):
+def CountDigits(numbers):
     cnt = int(math.log10(numbers)+1)
     
     return cnt
