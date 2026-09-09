@@ -1,4 +1,4 @@
-#Find GCD of two numbers
+# #Find GCD of two numbers
 def find_gcd(a, b):
     gcd = 1
     for i in range(1, min(a, b)+1):
@@ -22,3 +22,16 @@ num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number "))
 
 print(find_gcd_of_number(num1, num2))
+
+#Using euclidean method
+a = 20
+b = 15
+while a>0 and b>0:
+    if a>b:
+        a = a%b
+    else:
+        b = b%a
+if a == 0:
+    print(b)
+else:
+    print(a)                
