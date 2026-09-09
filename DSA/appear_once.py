@@ -24,3 +24,15 @@ for i in range(0, n):
             c += 1
     if c == 1:
         print(num)                
+        
+#Using hashing
+n = len(arr)
+maxi = max(arr)
+hashArray = [0] * (maxi+1)
+
+for num in arr:
+    hashArray[num] += 1
+for num in arr:
+    if hashArray[num] == 1:
+        print(num)
+               
