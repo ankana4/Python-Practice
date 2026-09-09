@@ -13,3 +13,14 @@ for num in arr:
 for num in freq:
     if freq[num] == 1:
         print(num)            
+
+#Another brute-force approach        
+n = len(arr)
+for i in range(0, n):
+    num = arr[i]
+    c = 0
+    for j in range(0, n):
+        if arr[j] == num:
+            c += 1
+    if c == 1:
+        print(num)                
