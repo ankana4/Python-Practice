@@ -14,3 +14,12 @@ for i in range(1, n):
     if not found:
         print(i)
 print(-1)            
+
+
+#Using set
+seen = set(arr)
+for i in range(1, n):
+    if i not in seen:
+        print(i)
+        break
+    
