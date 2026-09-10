@@ -6,10 +6,9 @@ k = 15
 n = len(nums)
 l = 0
 for i in range(0, n):
+    s = 0
     for j in range(i, n):
-        s = 0
-        for x in range(i, j+1):
-            s += nums[x]
+        s += nums[j]
         if s==k:
             l=max(l, j-i+1)
 print(l)                
