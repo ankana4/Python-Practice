@@ -26,3 +26,22 @@ for i in range(0, n):
         if s==k:
             l=max(l, j-i+1)
 print(l)                
+
+
+#Bettter approach
+n = len(nums)
+pre_sum_dict={}
+sum_so_far = 0
+max_len = 0
+
+for i in range(0, n):
+    sum_so_far += nums[i]
+    if sum_so_far == k:
+        max_len = i+1
+    rem = sum_so_far - k
+    if rem in pre_sum_dict:
+        length = i-pre_sum_dict[rem]
+        max_len = max(max_len, length)
+    if sum_so_far not in pre_sum_dict:
+        pre_sum_dict[sum_so_far] = i        
+print(max_len)        
