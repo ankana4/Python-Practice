@@ -25,7 +25,7 @@ for i in nums:
 print(index)        
 print(nums)
 
-#Optimal approach
+#Optimal approach -> Two-pointer approach
 i = 0
 for j in range(1, len(nums)):
     if nums[j]!=nums[i]:
