@@ -9,7 +9,7 @@ arr.sort()
 smallest = arr[1]
 largest = arr[n-2]
 print("Sorted array is: ", arr)
-print("Smallest and largest is: ", smallest, largest)    
+print("Smallest and largest is: ", smallest, largest)     #Not correct 
 
 #Better approach
 #First find largest element
