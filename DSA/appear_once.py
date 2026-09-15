@@ -36,3 +36,14 @@ for num in arr:
     if hashArray[num] == 1:
         print(num)
                
+               
+#Use dictionary
+dict_data={} 
+for i in arr:
+    if i in dict_data:
+        dict_data[i]+=1
+    else:
+        dict_data[i]=1
+for k, v in dict_data.items():
+    if v==1:
+        print(k)                          
