@@ -30,3 +30,12 @@ expectedSum = n * (n+1) //2
 
 missingNum = expectedSum - totalSum
 print(missingNum)
+
+#Brute-force approach
+arr.sort()
+num = 0
+for i in range(0, len(arr)):
+    if arr[i]+1 != arr[i+1]:
+        num = arr[i]+1
+        break
+print(num)    
