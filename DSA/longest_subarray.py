@@ -44,4 +44,21 @@ for i in range(0, n):
         max_len = max(max_len, length)
     if sum_so_far not in pre_sum_dict:
         pre_sum_dict[sum_so_far] = i        
-print(max_len)        
+print(max_len)      
+
+#Optimal approach - two pointer approach
+left, right = 0,0
+sum_of_digits = nums[0]
+maxi_len=0
+
+while right<n:
+    while left<=right and sum_of_digits>k:
+        sum_of_digits-=nums[left]
+        left += 1
+    if sum_of_digits == k:
+        maxi_len=max(maxi_len, right-left+1)
+    right += 1
+    if right<n:
+        sum_of_digits+=nums[right]
+print(maxi_len)                
+          
