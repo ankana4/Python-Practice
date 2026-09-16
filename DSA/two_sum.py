@@ -46,5 +46,24 @@ for i, num in enumerate(nums):
         print([mp[complement], i])  
     mp[num] = i
 print([-1, -1])       
-        
 
+
+#Two pointer approach
+arr = [2, 6, 5, 8, 11]
+target=14
+arr.sort()        
+n = len(arr)
+left = 0
+right = n-1
+sum = 0
+while left < right:
+    sum = arr[left]+arr[right]
+    if sum == target:
+        print("YES")
+        break
+    elif sum < target:
+        left += 1
+    else:
+        right -= 1
+print("NO")                
+    
