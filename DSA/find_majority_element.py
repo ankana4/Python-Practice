@@ -28,3 +28,20 @@ for k, v in temp_dict.items():
         max_key = k
 print(max_key)                    
  
+
+#Optimal aaproach -> Moore's voting algorithm 
+c=0
+el=0
+for i in range(0, n):
+    if c == 0:
+        c = 1
+        el=arr[i]
+    elif el == arr[i]:
+        c == 1
+    else:
+        c -=1  
+c1 = arr.count(el)
+key = -1       
+if c1 > n//2:
+    key = el
+print(key)        
