@@ -12,4 +12,19 @@ for i in range(0, n):
             cnt+=1
     if cnt > n//2:
         key = arr[i]
-print(key)        
+print(key)       
+
+#Better Approach
+temp_dict={}
+
+for i in arr:
+    if i in temp_dict:
+        temp_dict[i]+=1
+    else:
+        temp_dict[i] =1
+max_key = -1
+for k, v in temp_dict.items():
+    if v > n//2:
+        max_key = k
+print(max_key)                    
+ 
