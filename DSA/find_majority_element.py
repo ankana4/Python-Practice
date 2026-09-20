@@ -7,7 +7,7 @@ n = len(arr)
 key = -1
 for i in range(0, n):
     cnt = 0
-    for j in range(0, n):
+    for j in range(i, n):
         if arr[j] == arr[i]:
             cnt+=1
     if cnt > n//2:
