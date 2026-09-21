@@ -35,11 +35,11 @@ while i<m and j<n:
             union_list.append(arr1[i])
         i+=1
         j+=1    
-while i<n:
+while i<m:
     if not union_list or union_list[-1] != arr1[i]:
             union_list.append(arr1[i])
     i+=1
-while j<m:
+while j<n:
     if not union_list or union_list[-1] != arr2[j]:
                 union_list.append(arr2[j])
     j+=1
