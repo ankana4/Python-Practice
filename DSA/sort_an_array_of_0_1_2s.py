@@ -10,7 +10,7 @@ for i in arr:
     elif i == 1:
         c1 += 1
     else:
-        c2 += 2
+        c2 += 1
 for i in range(0, c0):
     arr[i] = 0
 for i in range(c0, c0+c1):
