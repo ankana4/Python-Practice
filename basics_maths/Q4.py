@@ -34,4 +34,13 @@ while a>0 and b>0:
 if a == 0:
     print(b)
 else:
-    print(a)                
+    print(a)    
+    
+#Find gcd and lcm with more optimized approach
+x = a
+y = b
+while b!=0:
+    a,b=b, a%b
+gcd=a
+lcm = (x*y)//gcd
+print("Gcd and lcm is ", gcd," ",lcm)                    
