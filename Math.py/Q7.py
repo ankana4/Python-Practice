@@ -6,3 +6,7 @@ while(x>=0):
     x-=1
 print(*list_data)    
     
+#Optimize
+while(x>=0):
+    print(x, end=" ")
+    x-=1    
