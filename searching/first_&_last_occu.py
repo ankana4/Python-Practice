@@ -60,3 +60,25 @@ def firstOcc(arr, x):
 foo=firstOcc([2, 4, 5, 5, 5, 5, 5, 7, 8], 5)
 print(foo)                 
 
+
+def lastOcc(arr, x):
+    last=-1
+    low=0
+    high = len(arr)-1
+    
+    while low<=high:
+        mid=(low+high)//2
+        if arr[mid]==x:
+            last=mid
+            low=mid+1
+        elif arr[mid]<x:
+            low=mid+1
+        else:
+            high=mid-1
+    if last==-1:
+        return -1
+    return last
+
+loo=lastOcc([2, 4, 5, 5, 5, 5, 5, 7, 8], 5)
+print(loo)             
+                 
