@@ -24,7 +24,7 @@ def rotatedArray(arr):
             continue
         if arr[low]<=arr[mid]:
             ans=min(ans, arr[low])
-            low+=1
+            low=mid+1
         else:
             ans=min(ans, arr[mid])
             high=mid-1
