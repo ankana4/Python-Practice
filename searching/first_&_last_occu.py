@@ -38,3 +38,25 @@ fo=firstOccurance([5, 7, 7, 8, 8, 10], 8)
 lo=lastOccurance([5, 7, 7, 8, 8, 10], 8)
 print(fo)    
 print(lo)
+
+#without using lower bound and upper bound, use proper binary search
+def firstOcc(arr, x):
+    first=-1
+    low=0
+    high=len(arr)-1
+    
+    while low<=high:
+        mid=(low+high)//2
+        if arr[mid]==x:
+            first=mid
+            high=mid-1
+        elif arr[mid]<x:
+            low=mid+1
+        else:
+            high=mid-1
+    if first==-1:
+        return -1
+    return first
+foo=firstOcc([2, 4, 5, 5, 5, 5, 5, 7, 8], 5)
+print(foo)                 
+
