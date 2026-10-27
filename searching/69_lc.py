@@ -20,6 +20,8 @@ def mySqrt(n):
     ans=1
     low=1
     high=n
+    if n==0:
+        return 0
     while low<=high:
         mid=(low+high)//2
         if mid*mid<=n:
@@ -28,5 +30,5 @@ def mySqrt(n):
         else:
             high=mid-1
     return ans                   
-ms=mySqrt(144)
+ms=mySqrt(35)
 print(ms) 
