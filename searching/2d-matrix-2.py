@@ -17,5 +17,28 @@ matrix=[
     [23, 30, 34, 60]
 ]
 sm=searchMatrix(matrix, 6)
-print(sm)
+# print(sm)
         
+        
+#better approach using binary search
+def binarySearch(arr, target):
+    low=0
+    high=len(arr)-1
+    while low<=high:
+        mid=(low+high)//2
+        if arr[mid]==target:
+            return mid
+        elif arr[mid]<target:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+
+def searchMatrix(matrix, target):
+    for i in range(0, len(matrix)):
+        index=binarySearch(matrix[i], target)
+        if index!=-1:
+            return[i, index]
+    return [-1, -1]
+smatrix=searchMatrix(matrix, 15)
+print(smatrix)
