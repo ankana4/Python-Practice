@@ -17,7 +17,7 @@ matrix=[
     [23, 30, 34, 60]
 ]
 sm=searchMatrix(matrix, 6)
-# print(sm)
+print(sm)
         
         
 #better approach using binary search
@@ -42,3 +42,20 @@ def searchMatrix(matrix, target):
     return [-1, -1]
 smatrix=searchMatrix(matrix, 15)
 print(smatrix)
+
+#optimized approach
+def optimizeSearchMatrix(matrix, target):
+    n=len(matrix)
+    m=len(matrix[0])
+    row=0
+    col=m-1
+    while row<=n and col>=0:
+        if matrix[row][col]==target:
+            return True
+        elif matrix[row][col]<target:
+            row+=1
+        else:
+            col-=1
+    return False            
+osmatrix=optimizeSearchMatrix(matrix, 9)
+print(osmatrix)
