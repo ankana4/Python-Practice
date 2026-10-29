@@ -49,7 +49,7 @@ def optimizeSearchMatrix(matrix, target):
     m=len(matrix[0])
     row=0
     col=m-1
-    while row<=n and col>=0:
+    while row<n and col>=0:
         if matrix[row][col]==target:
             return True
         elif matrix[row][col]<target:
