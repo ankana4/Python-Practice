@@ -17,4 +17,27 @@ def NthRoot(n, m):
         i+=1
     return -1  
 root=NthRoot(5, 32)      
-print(root)
+# print(root)
+
+#Using binary search algo
+def mulNum(mid, n, m):
+    ans=1
+    for i in range(1, n+1):
+        ans=ans*mid
+        if ans>m: return 2
+    if ans==m: return 1
+    return 0    
+def NthRoot(n, m):
+    low=1
+    high=m
+    while(low<=high):
+        mid=(low+high)//2
+        func=mulNum(mid, n, m)
+        if func==1: return mid
+        elif func==0: low=mid+1
+        else:
+            high=mid-1
+    return -1
+
+nRoot=NthRoot(4, 16)    
+print(nRoot)    
