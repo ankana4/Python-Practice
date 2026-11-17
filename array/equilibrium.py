@@ -24,3 +24,21 @@ def equilibriumPoint(arr):
 arr=[-7, 1, 5, 2, -4, 3, 0]
 eq=equilibriumPoint(arr)  
 print(eq)          
+
+
+#Better approach
+def equilibrium_point(arr):
+    n=len(arr)
+    totalSum=sum(arr)
+    leftSum=0
+    for i in range(0, n):
+        rightSum=totalSum-leftSum-arr[i]
+        
+        if rightSum == leftSum:
+            return i
+        
+        leftSum+=arr[i]
+    return -1
+
+arr=[1, 2, 0, 3]
+print(equilibrium_point(arr))    
