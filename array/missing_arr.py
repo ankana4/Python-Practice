@@ -19,4 +19,15 @@ def missingNum(arr: list[int]) -> int:
             return i
                     
 arr=[1]
-print(missingNum(arr))                    
+# print(missingNum(arr))                    
+
+#Optimal approach
+def missingNum(arr):
+    n=len(arr)+1
+    totalSum=n*(n+1)//2
+    actualSum=sum(arr)
+    
+    return totalSum-actualSum
+
+arr=[1, 2, 3, 5]
+print(missingNum(arr))
