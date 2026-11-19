@@ -13,7 +13,7 @@ def ispomorphicStr(s, t):
     
     return True
 
-s="f11"
-t="b23"
+s="egg"
+t="add"
 print(ispomorphicStr(s, t))
        
