@@ -12,4 +12,24 @@ def maxProduct(nums):
     return largest
 
 nums=[-2,0,-1]
-print(maxProduct(nums))            
+# print(maxProduct(nums))      
+
+#Optimal Approach
+def maxProduct(nums):
+    max_prod=nums[0]
+    min_prod=nums[0]
+    largest=nums[0]
+    
+    for i in range(1, len(nums)):
+        curr=nums[i]
+        a=curr
+        b=curr*max_prod
+        c=curr*min_prod
+        
+        max_prod=max(a, b, c)
+        min_prod=min(a, b, c)
+        largest=max(largest, max_prod)
+    return largest
+
+nums=[-2,0,-1]
+print(maxProduct(nums))          
