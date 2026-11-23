@@ -4,6 +4,9 @@
 def rotateArr(arr, k):
     n=len(arr)
     temp=[]
+    if n==0:
+        return
+    k=n-(k%n)
     for i in range(0, k):
         temp.append(arr[i])
     for i in range(k, n):
