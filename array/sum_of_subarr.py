@@ -29,3 +29,15 @@ def sumOfSubarr(arr):
 
 arr=[1, 3]
 print(sumOfSubarr(arr))           
+
+
+#Optimal approach
+def sumOfSubarr(arr):
+    n=len(arr)
+    total=0
+    for i in range(0, n):
+        total+=arr[i]*(i+1)*(n-i)
+    return total
+
+arr=[1, 2, 3, 4]
+print(sumOfSubarr(arr))    
