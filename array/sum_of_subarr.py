@@ -1,18 +1,15 @@
-#Max Circular Subarray Sum
+# Given an array arr[], find the sum of all the subarrays of the given array.
 
 #Brute-force approach
-def maxCircularArray(arr):
-    n=len(arr)
-    largest=arr[0]
-    for i in range(n):
-        total=0
-        for j in range(n):
-            index=(i+j)%n
-            total+=arr[index]
-            
-            if total>largest:
-                largest=total
-    return largest
 
-arr=[8, -8, 9, -9, 10, -11, 12]
-print(maxCircularArray(arr))           
+def sumOfSubarr(arr):
+    n=len(arr)
+    total=0
+    for i in range(0, n):
+        for j in range(i, n):
+            for k in range(i, j+1):
+                total+=arr[k]
+    return total
+
+arr=[1, 2, 3]
+print(sumOfSubarr(arr))            
