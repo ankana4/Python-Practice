@@ -12,4 +12,20 @@ def sumOfSubarr(arr):
     return total
 
 arr=[1, 2, 3]
-print(sumOfSubarr(arr))            
+print(sumOfSubarr(arr))            \
+    
+#better approach
+
+def sumOfSubarr(arr):
+    total=0
+    n=len(arr)
+    
+    for i in range(0,n):
+        current_sum=0
+        for j in range(i, n):
+            current_sum+=arr[j]
+            total+=current_sum
+    return total
+
+arr=[1, 3]
+print(sumOfSubarr(arr))           
