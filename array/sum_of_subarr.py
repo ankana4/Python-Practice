@@ -15,7 +15,6 @@ arr=[1, 2, 3]
 print(sumOfSubarr(arr))            \
     
 #better approach
-
 def sumOfSubarr(arr):
     total=0
     n=len(arr)
