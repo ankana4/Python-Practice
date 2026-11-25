@@ -1,5 +1,4 @@
 #Modify an array such that if 'arr[i]' is 'j' then arr[j] becomes i
-
 #Brute-force approach
 def reArrange(arr):
     n=len(arr)
