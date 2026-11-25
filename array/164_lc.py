@@ -1,7 +1,6 @@
 #164. Maximum Gap
 
 #Brute-force approach
-
 def maxGap(nums):
     n=len(nums)
     if nums is None or n<2:
