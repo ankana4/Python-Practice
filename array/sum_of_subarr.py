@@ -1,7 +1,6 @@
 # Given an array arr[], find the sum of all the subarrays of the given array.
 
 #Brute-force approach
-
 def sumOfSubarr(arr):
     n=len(arr)
     total=0
