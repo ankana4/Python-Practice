@@ -14,7 +14,7 @@ def longestPalindrom(s):
 
 
 s='babad'
-# print(longestPalindrom(s))                
+print(longestPalindrom(s))                
 
 #Without slicing
 def isPalindrome(s, left, right):
@@ -37,7 +37,7 @@ def longestPalindrome(s):
     return longest
 
 s='bababad'
-# print(longestPalindrome(s))                   
+print(longestPalindrome(s))                   
 
 #Expand around center approach
 def expand(s, left, right):
