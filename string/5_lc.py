@@ -14,4 +14,27 @@ def longestPalindrom(s):
 
 
 s='babad'
-print(longestPalindrom(s))                
+# print(longestPalindrom(s))                
+
+#Without slicing
+def isPalindrome(s, left, right):
+    while left<right:
+        if s[left]!=s[right]:
+            return False
+        right-=1
+        left+=1
+    return True
+
+def longestPalindrome(s):
+    n=len(s)
+    longest=''
+    
+    for i in range(n):
+        for j in range(n):
+            if isPalindrome(s, i, j):
+                if j-i+1>len(longest):
+                    longest=s[i:j+1] 
+    return longest
+
+s='bababad'
+print(longestPalindrome(s))                   
