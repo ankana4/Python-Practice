@@ -37,4 +37,27 @@ def longestPalindrome(s):
     return longest
 
 s='bababad'
-print(longestPalindrome(s))                   
+# print(longestPalindrome(s))                   
+
+#Expand around center approach
+def expand(s, left, right):
+    while left>=0 and s[right]<len(s) and s[left]==s[right]:
+        left-=1
+        right+=1
+        
+    return s[left+1:right]
+
+def longestPalindrome(s):
+    n=len(s)
+    longest=""
+    for i in range(n):
+        odd=expand(s, i, i)
+        even=expand(s, i, i+1)
+        if len(odd)>len(longest):
+            longest=odd
+        if len(even)>len(longest):
+            longest=even
+    return longest
+
+s='babad'
+print(longestPalindrom(s))                
